@@ -20,6 +20,7 @@
 
   body {
     position: relative;
+    /*overflow: hidden;*/ 
   }
   
   .page {
@@ -119,8 +120,8 @@
     text-transform: uppercase;
     color: #0f0d0e;
     font-weight: 700;
-    margin-top: 42px;
-    margin-bottom: 35px;
+    margin-top: 60px;
+    margin-bottom: 40px;
     justify-content: center;
 
     position: relative;
@@ -134,7 +135,7 @@
     position: absolute;
     
     justify-content: center;
-    top: 30px;
+    top: 35px;
   }
 
   .trend1 {
@@ -188,15 +189,15 @@
     border: 3px solid #b59f5b;
 
     margin: 20px auto 20px;
+    padding: 0 40px 30px 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
   }
 
   .trend-teg {
-    margin: 40px 55px 16px; 
-  }
-
-  .trend-name {
-    margin-left: 55px;
-    margin-bottom: 35px;
+    margin-top: 16px; 
   }
 
   .trend-teg-list {
@@ -584,21 +585,33 @@
 
   .products-conteiner {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .product {
+    display: flex;
+  }
+
+  .product__imgbox {
+    position: absolute;
   }
 
   .product__body {
-    width: 347px;
-    height: 267px;
+    max-width: 347px;
+    min-height: 267px;
 
     outline: 3px solid #b59f5b;
-    margin-top: -30px;
-    margin-left: -22px;
-    margin-bottom: 65px;
-  }
 
-  .product__content {
-    padding: 0 22px;
+    margin: 175px -23px 65px;
+    padding: 5px 25px;
+
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+
+    position: relative;
   }
 
   .product__title {
@@ -607,7 +620,7 @@
     color: #0f0d0e;
     font-weight: 700;
 
-    padding: 50px 0 10px;
+    padding-top: 50px;
   }
 
   .product__description {
@@ -628,7 +641,6 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 0 22px;
   }
 
   .product__prices {
@@ -754,9 +766,11 @@
     position: fixed;
     top: 0;
     left: 0;
-    display: flex;
+    display: none;
     margin: auto;
     font-family: OpenSans, arial, sans-serif;
+
+    overflow-y: scroll;
   }
 
   .popup__close {
@@ -939,10 +953,6 @@
     background-color: #323232;
   }
 
-  .popup-hidden {
-    display: none;
-  }
-
   @media (max-width: 1200px) {
     .banner-title {
       width: 90%; 
@@ -1036,6 +1046,8 @@
 
     .trends-title {
       font-size: 18px;
+      margin-top: 45px;
+      margin-bottom: 30px;
     }
     
     .trend-name {
@@ -1087,13 +1099,10 @@
     }
 
     .product__body {
+      margin-top: 200px;
       margin-bottom: 25px;
-      width: 338px;
-      height: 264px;
-    }
-
-    .product {
-      width: 45%;
+      max-width: 338px;
+      min-height: 264px;
     }
 
     .product__title {
@@ -1146,6 +1155,7 @@
 
     .trends-title {
       font-size: 16px;
+      margin-top: 40px;
     }
     
     .trend-name {
@@ -1218,13 +1228,12 @@
     }
 
     .product__body {
+      margin-top: 250px;
       margin-bottom: 25px;
-      width: 330px;
-      height: 220px;
-    }
-
-    .product {
-      width: 90%;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      max-width: 330px;
+      min-height: 220px;
     }
 
     .product__title {
@@ -1246,7 +1255,7 @@
     height: 100%;
     z-index: 1;
     opacity: 0.5;
-  } 
+  } */
 
  /*.img-2 {
     position: absolute;
@@ -1254,6 +1263,17 @@
     background-repeat: no-repeat;
     background-color: royalblue;
     width: 768px;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.5;
+  } */
+
+  /*.img-3 {
+    position: absolute;
+    background-image: url(../11/NOEMI_mq_desktop.jpg);
+    background-repeat: no-repeat;
+    background-color: royalblue;
+    width: 1660px;
     height: 100%;
     z-index: 1;
     opacity: 0.5;
