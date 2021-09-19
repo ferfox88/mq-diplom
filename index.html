@@ -10,17 +10,19 @@
 </head>
 
 <body>
-    <div class="img-1"></div>
+    <div class="img-3"></div>
     <div class="img-2"></div>
+    <div class="img-1"></div>
+
     <div class="page">
         <header class="header">
             <div class="logo-and-menu">
                 <a href="/"><img src="svg/noemi-logo.svg" class="header-logo" alt="noemi-logo"></a>
-                
+
                 <button class="menu__button js-menu__button">
                     <span class="menu__button-label">открыть меню</span>
                 </button>
-        
+
                 <nav class="menu">
                     <ul class="menu-list">
                         <li class="menu-list-item">
@@ -508,51 +510,49 @@
         </footer>
     </div>
 
-    <div class="popup-hidden">
-        <div class="popup">
-            <div class="popup__container">
-                <button class="popup__close" type="button">
-                    <span class="popup__close-hint">Закрыть окно</span>
-                </button>
-                <span class="feedback">Ваш фидбек</span>
-                <form class="feedback-form">
-                    <div class="feedback-form-group">
-                        <label class="feedback-field-group">
-                            <span class="feedback-label">Как часто вы заходите на сайт?</span>
-                            <select class="feedback-select">
-                                <option value="">Почти каждый день</option>
-                                <option value="">Раз в несколько дней</option>
-                                <option value="">Раз в несколько недель</option>
-                                <option value="">Несколько раз в год</option>
-                            </select>
-                        </label>
-                    </div>
-                    <div class="feedback-form-group">
-                        <div class="feedback-field-group">
-                            <span class="feedback-label">Вы подписаны на e-mail рассылку?</span>
-                            <div class="feedback-radio-group"><label class="radio-group">
-                                    <input type="radio" class="radio" name="radio-group">
-                                    <span class="radio-group-text">Да</span>
-                                </label>
-                                <label class="radio-group">
-                                    <input type="radio" class="radio" name="radio-group">
-                                    <span class="radio-group-text">Нет</span>
-                                </label>
-                            </div>
+    <div class="popup">
+        <div class="popup__container">
+            <button class="popup__close" type="button">
+                <span class="popup__close-hint">Закрыть окно</span>
+            </button>
+            <span class="feedback">Ваш фидбек</span>
+            <form class="feedback-form">
+                <div class="feedback-form-group">
+                    <label class="feedback-field-group">
+                        <span class="feedback-label">Как часто вы заходите на сайт?</span>
+                        <select class="feedback-select">
+                            <option value="">Почти каждый день</option>
+                            <option value="">Раз в несколько дней</option>
+                            <option value="">Раз в несколько недель</option>
+                            <option value="">Несколько раз в год</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="feedback-form-group">
+                    <div class="feedback-field-group">
+                        <span class="feedback-label">Вы подписаны на e-mail рассылку?</span>
+                        <div class="feedback-radio-group"><label class="radio-group">
+                                <input type="radio" class="radio" name="radio-group">
+                                <span class="radio-group-text">Да</span>
+                            </label>
+                            <label class="radio-group">
+                                <input type="radio" class="radio" name="radio-group">
+                                <span class="radio-group-text">Нет</span>
+                            </label>
                         </div>
                     </div>
-                    <div class="feedback-form-group">
-                        <label class="feedback-field-group">
-                            <span class="feedback-label">Расскажите, какой контент вы хотели бы видеть
-                                на нашем сайте?</span>
-                            <textarea class="feedback-field-textarea" placeholder="Может, больше рецептов?"></textarea>
-                        </label>
-                    </div>
-                    <div class="feedback-form-group form-actions">
-                        <button class="feedback-button" type="submit">Отправить</button>
-                    </div>
-                </form>
-            </div>
+                </div>
+                <div class="feedback-form-group">
+                    <label class="feedback-field-group">
+                        <span class="feedback-label">Расскажите, какой контент вы хотели бы видеть
+                            на нашем сайте?</span>
+                        <textarea class="feedback-field-textarea" placeholder="Может, больше рецептов?"></textarea>
+                    </label>
+                </div>
+                <div class="feedback-form-group form-actions">
+                    <button class="feedback-button" type="submit">Отправить</button>
+                </div>
+            </form>
         </div>
     </div>
 </body>
