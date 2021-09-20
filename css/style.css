@@ -188,7 +188,7 @@
     min-height: 146px;
     border: 3px solid #b59f5b;
 
-    margin: 20px auto 20px;
+    margin: 20px;
     padding: 0 40px 30px 30px;
 
     display: flex;
@@ -252,8 +252,6 @@
   }
   
   .post-img {
-    margin-right: 30px;
-    
     width: 380px;
     height: 100%;
   }
@@ -334,7 +332,8 @@
   }
   
   .side-bar {
-     width: 275px; 
+     width: 275px;
+     margin-left: 30px;
   }
   
   .section-new-posts {
@@ -557,7 +556,8 @@
 
   .products {
     max-width: 1170px;
-    margin: 10px auto 0;
+    margin: 10px auto 65px;
+    padding: 0 35px;
   }
 
   .products-title {
@@ -585,33 +585,25 @@
 
   .products-conteiner {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin-left: 20px;
-    margin-right: 20px;
   }
 
   .product {
     display: flex;
-  }
-
-  .product__imgbox {
-    position: absolute;
+    flex-direction: column;
+    width: 300px;
   }
 
   .product__body {
-    max-width: 347px;
-    min-height: 267px;
+    margin-top: -35px;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 30px 20px 20px;
 
     outline: 3px solid #b59f5b;
 
-    margin: 175px -23px 65px;
-    padding: 5px 25px;
-
-    display: flex;
     flex-grow: 1;
-    flex-direction: column;
-
-    position: relative;
   }
 
   .product__title {
@@ -620,7 +612,9 @@
     color: #0f0d0e;
     font-weight: 700;
 
-    padding-top: 50px;
+    padding-top: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 
   .product__description {
@@ -953,6 +947,12 @@
     background-color: #323232;
   }
 
+  @media (min-width: 1201px) {
+    .post-info {
+      margin-left: 30px;
+    }
+  }
+
   @media (max-width: 1200px) {
     .banner-title {
       width: 90%; 
@@ -1008,10 +1008,6 @@
     .post {
       flex-wrap: wrap;
     }
-
-    .products-conteiner {
-      flex-wrap: wrap;
-    }
   }
 
   @media (min-width: 641px) and (max-width: 1200px) {
@@ -1062,9 +1058,13 @@
       margin: 40px 35px 0;
     }
 
+    .posts {
+      width: 60%;
+    }
+
     .post-img {
       margin-bottom: 15px;
-      width: 392px;
+      width: 100%;
     }
 
     .post-name {
@@ -1073,36 +1073,32 @@
       line-height: 1.29;
     }
 
-    .post-info {
-      margin-right: 30px;
-    }
-
     .post-date-and-author {
       margin-bottom: 20px;
     }
 
+    .side-bar {
+      width: 40%;
+    }
+
     .products {
-      margin: 0 55px;
+      margin: 0 35px 50px;
     }
 
     .products-title {
       font-size: 18px;
     }
 
-    .products-conteiner {
-      justify-content: space-between;
+    .product {
+      width: calc(50% - 25px);
+    }
+
+    .product:nth-child(n + 3) {
+      margin-top: 28px;
     }
 
     .product__img {
-      width: 292px;
-      height: 226px;
-    }
-
-    .product__body {
-      margin-top: 200px;
-      margin-bottom: 25px;
-      max-width: 338px;
-      min-height: 264px;
+      width: 100%;
     }
 
     .product__title {
@@ -1142,11 +1138,6 @@
       width: 100%;
       height: 230px;
       margin-bottom: 0.4%;
-    }
-
-    .trend-info {
-      margin-left: 17px;
-      margin-right: 17px;
     }
 
     .trend-teg {
@@ -1199,6 +1190,7 @@
 
     .side-bar {
       margin-top: -10px;
+      margin-left: 0;
     }
 
     .name-side-bar {
@@ -1207,37 +1199,31 @@
 
     .section-new-posts {
       margin-bottom: 10px;
-  }
-
-    .products {
-      margin-left: 17px;
-      margin-right: 17px;
     }
 
     .products-title {
       font-size: 16px;
     }
 
-    .product__description {
-      padding-bottom: 15px;
-  }
-
-    .product__img {
-      width: 285px;
-      height: 285px;
+    .product:nth-child(n + 2) {
+      margin-top: 30px;
     }
 
-    .product__body {
-      margin-top: 250px;
-      margin-bottom: 25px;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      max-width: 330px;
-      min-height: 220px;
+    .product__description {
+      padding-bottom: 15px;
+    }
+
+    .product {
+      width: 100%;
+    }
+
+    .product__img {
+      width: 100%;
     }
 
     .product__title {
       font-size: 17px;
+      padding-top: 10px;
     }
 
     .popup__container {
@@ -1257,7 +1243,7 @@
     opacity: 0.5;
   } */
 
- /*.img-2 {
+  /*.img-2 {
     position: absolute;
     background-image: url(../11/NOEMI_mq_tablet.jpg);
     background-repeat: no-repeat;
